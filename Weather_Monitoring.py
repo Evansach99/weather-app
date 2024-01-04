@@ -16,7 +16,6 @@ broker = "test.mosquitto.org"   # Broker
 pub_topic = "iotproject/asmweather"    # asm -Automate Scens Management  send messages to this topic
 
 ############### MQTT section ##################
-
 # when connecting to mqtt do this;
 def on_connect(client, userdata, flags, rc):
         if rc==0:
