@@ -57,11 +57,11 @@ def control_message(temperature,humidity):
         subprocess.run(["tdtool", "--on", "4"])  # Adjust the device ID accordingly
         val_lgt ="Light One / turned On"
         return val_lgt
-    elif (-9.99 >= tempval) and (tempval <= 1.00) :
+    elif (-9.99 >= tempval) and (tempval <= -1.00) :
         subprocess.run(["tdtool", "--on", "4"])  # Adjust the device ID accordingly
         val_lgt ="Light Two / turned On"
         return val_lgt
-    elif (1.99 >= tempval) and (tempval <= 10.00) :
+    elif (-0.99 >= tempval) and (tempval <= 10.00) :
         subprocess.run(["tdtool", "--on", "4"])  # Adjust the device ID accordingly
         val_lgt ="Light three / turned On"
         return val_lgt
