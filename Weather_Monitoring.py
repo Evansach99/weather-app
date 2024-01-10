@@ -53,7 +53,7 @@ def get_weather():
 def control_message(temperature,humidity):
     tempval = float(temperature)
     humidityval = int(humidity)
-    if (-20.00 >= tempval) and (tempval <= 10.00):
+    if (-20.00 >= tempval) and (tempval <= -10.00):
         subprocess.run(["tdtool", "--on", "4"])  # Adjust the device ID accordingly
         val_lgt ="Light One / turned On"
         return val_lgt
